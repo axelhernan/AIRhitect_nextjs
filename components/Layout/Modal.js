@@ -30,9 +30,6 @@ const ContainerCarousel = styled.div `
         height:100%;
     }
 
-    @media screen and (min-height:600px){
-        height:100%;
-    }
 `;
 
 const ContentModal = styled.div`
@@ -75,7 +72,7 @@ const ContentSlideModal = styled.div`
         height: 100vh;
     }
 
-    @media screen and (min-height:600px){
+    @media only screen and (min-height:600px){
         height:100vh;
     }
 `;
