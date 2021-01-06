@@ -15,8 +15,6 @@ const ListMenu = styled.ul`
   display: ${({ open }) => open ? 'block' : 'none'};
   background:var(--white);
   width: 290px;
-  transition: transform 0.3s ease-in-out;
-
   position:absolute;
   z-index: 1;
   left:0;
@@ -28,12 +26,13 @@ const ListMenu = styled.ul`
       color:var(--purple);
       font-weight:100;
       font-size:1.5rem;
+      opacity:1;
 
       @media screen and (min-width:1200px){
         &:hover{
             background:var(--grey);
             transition: background .15s ease-in-out;
-            cursor:pointer
+            cursor:pointer;
         }
       }
   }
