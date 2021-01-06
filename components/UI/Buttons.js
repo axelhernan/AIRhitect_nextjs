@@ -20,10 +20,13 @@ export const StyledLinkNav = styled.a`
         display:flex;
     }
 
-    &:hover{
-          background:var(--grey);
-          transition: background .15s ease-in-out;
+    @media screen and (min-width:1200px){
+        &:hover{
+              background:var(--grey);
+              transition: background .15s ease-in-out;
+        }
     }
+      
 `;
 
 
@@ -31,9 +34,11 @@ export const StyledLink = styled.a`
     color:var(--white);
     text-decoration:underline;
 
-    &:hover{
-        opacity:.5;
-        transition: opacity .15s ease-in-out;
+    @media screen and (min-width:1200px){
+        &:hover{
+              background:var(--grey);
+              transition: background .15s ease-in-out;
+        }
     }
 `;
 
@@ -49,9 +54,11 @@ export const Styledbutton = styled.button`
     text-transform:uppercase;
     cursor:pointer;
 
-    &:hover{
-          opacity:.5;
-          transition: opacity .15s ease-in-out;
+    @media screen and (min-width:1200px){
+        &:hover{
+              background:var(--grey);
+              transition: background .15s ease-in-out;
+        }
     }
 `;
 
