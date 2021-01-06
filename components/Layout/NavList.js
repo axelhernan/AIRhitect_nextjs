@@ -18,17 +18,17 @@ const ListMenu = styled.ul`
   position:absolute;
   z-index: 1;
   left:0;
-  top:7rem;
+  top:5rem;
 
   li > a {
       padding:1.5rem 2rem;
       display:block;
       color:var(--purple);
-      font-weight:100;
+      font-weight:300;
       font-size:1.5rem;
       opacity:1;
 
-      @media screen and (min-width:1200px){
+      @media screen and (min-width:1024px){
         &:hover{
             background:var(--grey);
             transition: background .15s ease-in-out;
