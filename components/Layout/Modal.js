@@ -43,7 +43,6 @@ const ContentModal = styled.div`
     @media screen and (min-width:992px){
         display: grid;
         width: calc(100% - 200px);
-        height: calc(100% - 300px);
     }
 
     @media screen and (min-width:992px){
