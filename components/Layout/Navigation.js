@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import Link from 'next/link';
+import { css } from '@emotion/react';
 import Buttons,{StyledLinkNav} from '../UI/Buttons';
 import Burger from '../UI/Burger';
 import Pagination from './Pagination';
@@ -24,12 +25,13 @@ const ContainerNavigation = styled.div`
     @media screen and (min-width:768px){
         justify-content: space-between;
     }
+    
 `;
 
 const MyLogo = React.forwardRef(({ href, whiteLogo }, ref) => {
     return (
-        <a className='marginAuto' href={href}>
-            { whiteLogo === true ? <Image src='/static/images/logo-airhitect-white.png' width='190' height='33' alt='AIRhitect' /> : <Image src='/static/images/logo-airhitect.png' width='190' height='33' alt='AIRhitect' />}
+        <a className='marginAuto' href={href} >
+            { whiteLogo === true ? <Image src='/static/images/logo-airhitect-white.png' width='150' height='26' alt='AIRhitect' /> : <Image src='/static/images/logo-airhitect.png' width='150' height='26' alt='AIRhitect' />}
         </a>
     )
 })

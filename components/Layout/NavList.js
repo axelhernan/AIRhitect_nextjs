@@ -30,10 +30,12 @@ const ListMenu = styled.ul`
       font-weight:100;
       font-size:1.5rem;
 
-      &:hover{
-          background:var(--grey);
-          transition: background .15s ease-in-out;
-          cursor:pointer
+      @media screen and (min-width:1200px){
+        &:hover{
+            background:var(--grey);
+            transition: background .15s ease-in-out;
+            cursor:pointer
+        }
       }
   }
 `;
