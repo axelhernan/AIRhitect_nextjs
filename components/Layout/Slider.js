@@ -55,9 +55,7 @@ const ItemSlider = styled.a`
 
     @media screen and (min-width:1024px){
       &:hover ${ItemText} {
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column nowrap;
+        display:block;
         position:absolute;
         bottom:0;
         cursor:pointer;
