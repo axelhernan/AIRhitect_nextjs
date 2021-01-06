@@ -24,9 +24,13 @@ const Overlay = styled.div`
 
 const ContainerCarousel = styled.div `
     position:relative;
-    height:300px;
+    height:100%;
 
-    @media screen and (min-width:992px){
+    @media screen and (min-width:1200px){
+        height:100%;
+    }
+
+    @media screen and (min-height:600px){
         height:100%;
     }
 `;
@@ -40,12 +44,13 @@ const ContentModal = styled.div`
     height:90vh;
     position:relative;
 
+
     @media screen and (min-width:992px){
         display: grid;
         width: calc(100% - 200px);
     }
 
-    @media screen and (min-width:992px){
+    @media screen and (min-width:1200px){
         grid-template-columns: 1fr 1fr;
     }
 
@@ -61,13 +66,17 @@ const ContentSlideModal = styled.div`
     background-position: bottom;
 
     width:100%;
-    height:300px;
+    height:200px;
     cursor:pointer;
 
-    @media screen and (min-width:992px){
+    @media screen and (min-width:1200px){
         background-position: center center;
         background-repeat: no-repeat; 
         height: 100vh;
+    }
+
+    @media screen and (min-height:600px){
+        height:100vh;
     }
 `;
 
@@ -96,8 +105,8 @@ const Modal = ({ openModal, hideModal,myArrow }) => {
                         ))}
                     </Carousel>
                 </ContainerCarousel>
-                <div css={css`padding:4rem;`}>
-                    <h3>Project name</h3>
+                <div css={css`padding:3rem;`}>
+                    <h3 css={css`margin-top:0`}>Project name</h3>
                     <p>
                         Vivamus imperdiet hendrerit leo quis fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend leo sit amet rutrum pulvinar.
                         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam mauris sed ante laoreet, a luctus nunc finibus. Quisque quis neque enim. In facilisis posuere elementum. Morbi eu odio bibendum, pretium velit in, feugiat mi. Cras gravida neque in enim tempus pretium. Maecenas sodales vestibulum eros at consectetur.
