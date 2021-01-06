@@ -16,6 +16,11 @@ const ItemText = styled.span`
   display:block;
   width:90%;
   margin-bottom:5rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
 
 
   span{
@@ -45,11 +50,7 @@ const ItemSlider = styled.a`
     width:100%;
     height:100vh;
     cursor:pointer;
-
     position:relative;
-    display: flex;
-    align-items: end;
-    justify-content: center;
 
 
     @media screen and (min-width:1024px){

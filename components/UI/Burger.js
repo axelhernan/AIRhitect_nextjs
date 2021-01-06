@@ -24,7 +24,6 @@ const StyledBurger = styled.span`
       margin-right:1rem;
     }
 
-
     &:nth-of-type(1) {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
