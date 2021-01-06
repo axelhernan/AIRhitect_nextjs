@@ -24,7 +24,7 @@ const Overlay = styled.div`
 
 const ContainerCarousel = styled.div `
     position:relative;
-    height:100%;
+    height:200px;
 
     @media screen and (min-width:1200px){
         height:100%;
