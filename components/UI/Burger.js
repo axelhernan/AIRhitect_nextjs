@@ -30,7 +30,6 @@ const StyledBurger = styled.span`
     }
     &:nth-of-type(2) {
       transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-      opacity: ${({ open }) => open ? 0 : 1};
     }
     &:nth-of-type(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
