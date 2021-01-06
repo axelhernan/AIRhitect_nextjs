@@ -13,6 +13,10 @@ const Main = styled.main`
         height:100vh;
     }
 
+    @media screen and (min-height:500px){
+        height:${({ setFullHeight }) => setFullHeight || '100%'};
+    }
+
     @media screen and (min-height:900px){
         height:100vh;
     }
