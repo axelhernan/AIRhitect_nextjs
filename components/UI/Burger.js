@@ -15,7 +15,7 @@ const StyledBurger = styled.span`
   span {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ccc' : 'var(--purple)'};
+    background-color: var(--purple);
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -30,6 +30,7 @@ const StyledBurger = styled.span`
     }
     &:nth-of-type(2) {
       transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+      opacity: ${({ open }) => open ? 0 : 1};
     }
     &:nth-of-type(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};

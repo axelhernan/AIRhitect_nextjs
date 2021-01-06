@@ -13,8 +13,7 @@ const ListItems = [
 const ListMenu = styled.ul`
   list-style: none;
   display: ${({ open }) => open ? 'block' : 'none'};
-
-  background: ${({ open }) => open ? 'var(--white)' : 'transparent'};
+  background:var(--white);
   width: 290px;
   transition: transform 0.3s ease-in-out;
 
