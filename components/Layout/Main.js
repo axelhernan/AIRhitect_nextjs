@@ -13,7 +13,7 @@ const Main = styled.main`
         height:100vh;
     }
 
-    @media screen and (min-height:700px){
+    @media screen and (min-height:900px){
         height:100vh;
     }
 `;
