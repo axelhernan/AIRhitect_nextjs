@@ -18,35 +18,40 @@ const PeopleAirhitect = [
     id: 1,
     name: "Colleague Name",
     role: "CEO",
-    text: "esto deberia cambiar ahora mismo",
+    text:
+      "Duis vehicula neque at eratb eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
     alt: "Colleague Name",
   },
   {
     id: 2,
     name: "Colleague Name",
     role: "Administration",
-    text: "esto deberia cambiar ahora mismo",
+    text:
+      "Duis vehicula neque at eratb eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
     alt: "Colleague Name",
   },
   {
     id: 3,
     name: "Colleague Name",
     role: "Architect",
-    text: "esto deberia cambiar ahora mismo",
+    text:
+      "Duis vehicula neque at eratb eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
     alt: "Colleague Name",
   },
   {
     id: 4,
     name: "Colleague Name",
     role: "Architect",
-    text: "esto deberia cambiar ahora mismo",
+    text:
+      "Duis vehicula neque at eratb eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
     alt: "Colleague Name",
   },
   {
     id: 5,
     name: "Colleague Name",
     role: "Architect",
-    text: "esto deberia cambiar ahora mismo",
+    text:
+      "Duis vehicula neque at eratb eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
     alt: "Colleague Name",
   },
 ];
