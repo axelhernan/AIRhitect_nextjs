@@ -15,38 +15,79 @@ const OurTeam = styled.div`
 
 const PeopleAirhitect = [
   {
-	id: 1,
+    id: 1,
     name: "Colleague Name",
     role: "CEO",
     text:
       "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
-    alt: "Colleague Name",}
-	{id:2, name: "Colleague Name", role: "Administration", text:"Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.", alt:"Colleague Name"},
-	{id:3, name: "Colleague Name", role: "Architect", text:"Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.", alt:"Colleague Name"},
-	{id:4, name: "Colleague Name", role: "Architect", text:"Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.", alt:"Colleague Name"},
-	{id:5, name: "Colleague Name", role: "Architect", text:"Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.", alt:"Colleague Name"}
+    alt: "Colleague Name",
+  },
+  {
+    id: 2,
+    name: "Colleague Name",
+    role: "Administration",
+    text:
+      "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    alt: "Colleague Name",
+  },
+  {
+    id: 3,
+    name: "Colleague Name",
+    role: "Architect",
+    text:
+      "Duis vehicula neque at eratb eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    alt: "Colleague Name",
+  },
+  {
+    id: 4,
+    name: "Colleague Name",
+    role: "Architect",
+    text:
+      "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    alt: "Colleague Name",
+  },
+  {
+    id: 5,
+    name: "Colleague Name",
+    role: "Architect",
+    text:
+      "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    alt: "Colleague Name",
+  },
 ];
 
 const aboutus = () => {
-	return (
-		<Layout whiteLogo={false} actualPage={"our team"} >
+  return (
+    <Layout whiteLogo={false} actualPage={"our team"}>
       <OurTeam>
-				<GridFive>
-
-					{PeopleAirhitect.map((people) =>(
-						<div key={people.id}>
-							<Image src='/static/images/people-AIRhitect.png' width='160' height='160' alt={people.alt} />
-							<h3>
+        <GridFive>
+          {PeopleAirhitect.map((people) => (
+            <div key={people.id}>
+              <Image
+                src="/static/images/people-AIRhitect.png"
+                width="160"
+                height="160"
+                alt={people.alt}
+              />
+              <h3>
                 {people.name}
-								<span css={css`font-weight:300; display:block;text-align:center;`}>{people.role}</span>
-							</h3>
+                <span
+                  css={css`
+                    font-weight: 300;
+                    display: block;
+                    text-align: center;
+                  `}
+                >
+                  {people.role}
+                </span>
+              </h3>
               <p>{people.text}</p>
-						</div>
+            </div>
           ))}
         </GridFive>
       </OurTeam>
     </Layout>
-	);
+  );
 };
 
 export default aboutus;
