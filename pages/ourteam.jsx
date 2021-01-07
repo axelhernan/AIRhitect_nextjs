@@ -18,16 +18,14 @@ const PeopleAirhitect = [
     id: 1,
     name: "Colleague Name",
     role: "CEO",
-    text:
-      "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    text: "hola",
     alt: "Colleague Name",
   },
   {
     id: 2,
     name: "Colleague Name",
     role: "Administration",
-    text:
-      "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    text: "hola",
     alt: "Colleague Name",
   },
   {
@@ -42,16 +40,14 @@ const PeopleAirhitect = [
     id: 4,
     name: "Colleague Name",
     role: "Architect",
-    text:
-      "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    text: "hola",
     alt: "Colleague Name",
   },
   {
     id: 5,
     name: "Colleague Name",
     role: "Architect",
-    text:
-      "Duis vehicula neque at erat eleifend, rhoncus ultricies dolor suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    text: "hola",
     alt: "Colleague Name",
   },
 ];
