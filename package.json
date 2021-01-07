@@ -17,6 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "next": "10.0.4",
+    "prettier": "2.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-elastic-carousel": "^0.10.0",
@@ -24,6 +25,14 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.1.2"
-  }
+    "@emotion/babel-plugin": "^11.1.2",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "^7.22.0"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/axelhernan/AIRhitect_nextjs.git",
+  "author": "axelhernan <axeel.hernan@gmail.com>",
+  "license": "MIT"
 }
