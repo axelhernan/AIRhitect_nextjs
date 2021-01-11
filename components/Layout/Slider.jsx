@@ -5,9 +5,9 @@ import styled from "@emotion/styled";
 import Modal from "./Modal";
 
 const breakPoints = [
-	{ width: 1, itemsToShow: 1, pagination: false, itemPadding: [0, 0, 0, 0] },
-	{ width: 1024, itemsToShow: 2, pagination: false, itemPadding: [0, 0, 0, 0] },
-	{ width: 1200, itemsToShow: 3, pagination: false, itemPadding: [0, 0, 0, 0] },
+  { width: 1, itemsToShow: 1, pagination: false, itemPadding: [0, 0, 0, 0] },
+  { width: 1024, itemsToShow: 2, pagination: false, itemPadding: [0, 0, 0, 0] },
+  { width: 1200, itemsToShow: 3, pagination: false, itemPadding: [0, 0, 0, 0] },
 ];
 
 const ItemText = styled.span`
@@ -64,25 +64,25 @@ const ItemSlider = styled.a`
 `;
 
 const contentSlider = [
-	{
+  {
     id: 1,
     image: "url(/static/images/slider/project-airhitect-01.jpg)",
     title: "Project Name",
     text: "Vivamus imperdiet hendrerit leo quis fringilla.",
   },
-	{
+  {
     id: 2,
     image: "url(/static/images/slider/project-airhitect-02.jpg)",
     title: "Project Name",
     text: "Vivamus imperdiet hendrerit leo quis fringilla.",
   },
-	{
+  {
     id: 3,
     image: "url(/static/images/slider/project-airhitect-03.jpg)",
     title: "Project Name",
     text: "Vivamus imperdiet hendrerit leo quis fringilla.",
   },
-	{
+  {
     id: 4,
     image: "url(/static/images/slider/project-airhitect-01.jpg)",
     title: "Project Name",
@@ -91,25 +91,25 @@ const contentSlider = [
 ];
 
 const myArrow = ({ type, onClick, isEdge }) => {
-	const pointer = type === consts.PREV ? "" : "";
+  const pointer = type === consts.PREV ? "" : "";
 
-	return (
-		<button onClick={onClick} disabled={isEdge}>
-			{pointer}
-		</button>
-	);
-};;
+  return (
+    <button onClick={onClick} disabled={isEdge}>
+      {pointer}
+    </button>
+  );
+};
 
 const Slider = () => {
-	const [openModal, setOpenModal] = useState(false);
-	const showModal = () => setOpenModal(true);
-	const hideModal = () => setOpenModal(false);
+  const [openModal, setOpenModal] = useState(false);
+  const showModal = () => setOpenModal(true);
+  const hideModal = () => setOpenModal(false);
 
-	return (
-		<>
-			<Carousel
-				breakPoints={breakPoints}
-				itemPadding={[0]}
+  return (
+    <>
+      <Carousel
+        breakPoints={breakPoints}
+        itemPadding={[0]}
         css={css`
           position: absolute;
           top: 0;
@@ -117,24 +117,29 @@ const Slider = () => {
           justify-content: center;
           height: 100vh;
         `}
-				outerSpacing={0}
-				disableArrowsOnEnd={false}
-				renderArrow={myArrow}
-			>
-				{contentSlider.map((content) => (
-						<ItemSlider key={content.id} backgroundSlider={content.image} openModal={openModal} onClick={showModal}>
+        outerSpacing={0}
+        disableArrowsOnEnd={false}
+        renderArrow={myArrow}
+      >
+        {contentSlider.map((content) => (
+          <ItemSlider
+            key={content.id}
+            backgroundSlider={content.image}
+            openModal={openModal}
+            onClick={showModal}
           >
             <ItemText>
-								<span><strong>{content.title}</strong></span>
+              <span>
+                <strong>{content.title}</strong>
+              </span>
               <span>{content.text}</span>
             </ItemText>
           </ItemSlider>
-					))
-				}
-			</Carousel>
-			<Modal openModal={openModal} hideModal={hideModal} myArrow={myArrow} />
-		</>
-	);
+        ))}
+      </Carousel>
+      <Modal openModal={openModal} hideModal={hideModal} myArrow={myArrow} />
+    </>
+  );
 };
 
 export default Slider;
