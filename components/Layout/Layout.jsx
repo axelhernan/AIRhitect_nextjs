@@ -12,6 +12,8 @@ const Layout = ({
   whiteLogo,
   setFullHeight,
 }) => {
+  const globalBackground = setBackground || "var(--white)";
+
   return (
     <>
       <Global
@@ -27,6 +29,7 @@ const Layout = ({
           html {
             font-size: 62.5%;
             box-sizing: border-box;
+            height: 100%;
           }
           *,
           *:before,
@@ -37,6 +40,8 @@ const Layout = ({
             font-size: 1.6rem;
             line-height: 1.5;
             font-family: "Lato", sans-serif;
+            height: 100%;
+            background: ${globalBackground};
           }
           h1,
           h2 {
