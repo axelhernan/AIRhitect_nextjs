@@ -211,13 +211,21 @@ const Layout = ({
           type="image/x-icon"
         />
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+
         <meta name="og:title" content="AIRhitect" />
         <meta name="og:description" content="dedicated to the future" />
         <meta
           name="og:image"
           content="/static/images/slider/project-airhitect-01.jpg"
         />
-        <meta name="og:card" content="summary_large_image" />
+        <meta
+          property="og:url"
+          content="https://airhitect-git-main.axelhernan.vercel.app"
+        />
+        <meta
+          name="og:card"
+          content="/static/images/slider/project-airhitect-01.jpg"
+        />
 
         <meta name="twitter:title" content="AIRhitect" />
         <meta name="twitter:description" content="dedicated to the future" />
